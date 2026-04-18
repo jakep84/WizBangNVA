@@ -56,9 +56,9 @@ export default function WizbangSite() {
 
   const highlights = [
     "Private, appointment-based service",
+    "Pistols, rifles, shotguns, and more",
     "Local drop-off and pickup",
     "Clear communication throughout the job",
-    "Quick turnaround when schedule allows",
   ];
 
   return (
@@ -106,19 +106,19 @@ export default function WizbangSite() {
           >
             <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-zinc-300 shadow-2xl shadow-black/30 backdrop-blur-md">
               <Shield className="h-4 w-4" />
-              Private smithing work • Local drop-off and pickup
+              Private firearms service • Local drop-off and pickup
             </div>
 
             <h1 className="mt-8 max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight text-white md:text-7xl">
-              Modern, appointment-based handgun work without the storefront
-              hassle.
+              Private firearms work, done right.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300 md:text-xl">
-              WizBang provides private handgun service for Fort Belvoir and the
+              WizBang provides private firearms service for Fort Belvoir and the
               surrounding Northern Virginia area, with a focus on trigger work,
-              tuning, diagnostics, parts installation, and reliability-minded
-              service.
+              tuning, diagnostics, parts installation, deep cleaning, and
+              reliability-minded service across pistols, rifles, shotguns, and
+              more.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -218,7 +218,7 @@ export default function WizbangSite() {
               Services
             </div>
             <h3 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-              Focused handgun work with a clean, modern client experience.
+              Modern firearms service with a clean client experience.
             </h3>
             <p className="mt-4 text-zinc-400 leading-7">
               Built for people who want straight answers, solid work, and a
@@ -326,8 +326,8 @@ export default function WizbangSite() {
               </h3>
               <p className="mt-4 text-zinc-400 leading-7">
                 Send a text with the firearm, the work you want done, and any
-                parts you already have. If needed, local drop-off and pickup can
-                be arranged by appointment.
+                parts you already have. Local drop-off and pickup can be
+                arranged by appointment when needed.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
