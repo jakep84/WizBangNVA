@@ -114,11 +114,11 @@ export default function WizbangSite() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-300 md:text-xl">
-              WizBang provides appointment-based firearms service for Fort
-              Belvoir and the surrounding Northern Virginia area, including
-              trigger work, diagnostics, parts installation, deep cleaning,
-              optics mounting and zeroing, and reliability-focused service for
-              pistols, rifles, and shotguns.
+              Precision firearms service for Northern Virginia.
+              Appointment-based service for Fort Belvoir and the surrounding
+              area. Diagnostics, upgrades, cleaning, optics mounting and
+              zeroing, and reliability-focused work for pistols, rifles, and
+              shotguns.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -168,7 +168,7 @@ export default function WizbangSite() {
                       What clients want
                     </div>
                     <h2 className="mt-3 text-2xl font-semibold text-white">
-                      Confidence in the process
+                      What to expect{" "}
                     </h2>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-3">
@@ -218,7 +218,7 @@ export default function WizbangSite() {
               Services
             </div>
             <h3 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-              Modern firearms service with a clean client experience.
+              Core Services{" "}
             </h3>
             <p className="mt-4 text-zinc-400 leading-7">
               Built for people who want straight answers, solid work, and a
