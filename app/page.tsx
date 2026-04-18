@@ -269,8 +269,8 @@ export default function WizbangSite() {
                 Simple from first message to final pickup.
               </h3>
               <p className="mt-4 max-w-xl text-zinc-400 leading-7">
-                No storefront confusion. No random guessing. Just a clear
-                appointment-based process handled locally.
+                A clear appointment-based process, handled locally from first
+                contact to final pickup.
               </p>
             </div>
 
@@ -322,7 +322,7 @@ export default function WizbangSite() {
                 Book a job
               </div>
               <h3 className="mt-4 text-3xl font-semibold tracking-tight">
-                Ready when you are.
+                Start with a quick text
               </h3>
               <p className="mt-4 text-zinc-400 leading-7">
                 Send a text with the firearm, the work you want done, and any
@@ -335,7 +335,7 @@ export default function WizbangSite() {
                   className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-black transition hover:scale-[1.01]"
                 >
                   <MessageSquare className="h-4 w-4" />
-                  Text 512-673-8809
+                  Text
                 </a>
                 <a
                   href="tel:15126738809"
