@@ -38,6 +38,84 @@ export default function WizbangSite() {
     },
   ];
 
+  const pricingGroups = [
+    {
+      title: "Cleaning & diagnostics",
+      items: [
+        {
+          service: "Full ultrasonic deep clean",
+          price: "$125",
+          detail: "Detailed teardown, cleaning of suitable components, inspection, lubrication, and reassembly.",
+        },
+        {
+          service: "Ultrasonic add-on to a full teardown",
+          price: "+$50",
+          detail: "Add to a qualifying tuning or full disassembly package.",
+        },
+        {
+          service: "Diagnostics & reliability service",
+          price: "From $175",
+          detail: "Troubleshooting, inspection, cleaning, and functional evaluation. Range fees or ammunition, if required, are extra.",
+        },
+      ],
+    },
+    {
+      title: "1911 & 2011 work",
+      items: [
+        {
+          service: "Trigger replacement, fit & tune",
+          price: "$175",
+          detail: "Labor for fitting and tuning a compatible replacement trigger.",
+        },
+        {
+          service: "Trigger tuning",
+          price: "$150–$200",
+          detail: "Evaluation and tuning of an existing trigger system.",
+        },
+        {
+          service: "Thumb safety fitting",
+          price: "$125",
+          detail: "Replacement safety fitting and functional checks.",
+        },
+        {
+          service: "Action smoothing & internal polish",
+          price: "$150",
+          detail: "Internal inspection and appropriate smoothing of contact surfaces.",
+        },
+        {
+          service: "Disconnector ramp work",
+          price: "$75",
+          detail: "Only where inspection determines the work is appropriate.",
+        },
+      ],
+    },
+    {
+      title: "Parts & finishing",
+      items: [
+        {
+          service: "Spring or guide rod installation",
+          price: "From $50",
+          detail: "Install compatible customer-supplied components.",
+        },
+        {
+          service: "Optic mounting",
+          price: "From $50",
+          detail: "On an existing compatible mounting system; slide milling is not included.",
+        },
+        {
+          service: "Grip safety fitting",
+          price: "From $100",
+          detail: "Fit a compatible replacement safety, subject to inspection.",
+        },
+        {
+          service: "Stippling & Cerakote",
+          price: "Custom quote",
+          detail: "Priced by coverage, pattern, color, and preparation.",
+        },
+      ],
+    },
+  ];
+
   const process = [
     "Reach out with the firearm, the work you want done, and any parts you already have.",
     "Drop-off is arranged at a convenient local public location by appointment.",
@@ -82,6 +160,12 @@ export default function WizbangSite() {
               Services
             </a>
             <a
+              href="#pricing"
+              className="text-sm text-zinc-300 transition hover:text-white"
+            >
+              Pricing
+            </a>
+            <a
               href="#process"
               className="text-sm text-zinc-300 transition hover:text-white"
             >
@@ -94,6 +178,12 @@ export default function WizbangSite() {
               Book a job
             </a>
           </div>
+          <a
+            href="#pricing"
+            className="rounded-full border border-white/20 px-4 py-2 text-sm font-medium text-white transition hover:bg-white/10 md:hidden"
+          >
+            Pricing
+          </a>
         </div>
       </header>
 
@@ -247,14 +337,124 @@ export default function WizbangSite() {
                   <p className="mt-3 text-sm leading-6 text-zinc-400">
                     {service.desc}
                   </p>
-                  <div className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-300">
-                    Details on request{" "}
+                  <a
+                    href="#pricing"
+                    className="mt-5 inline-flex items-center gap-2 text-sm text-zinc-300 hover:text-white"
+                  >
+                    View pricing
                     <ChevronRight className="h-4 w-4 transition group-hover:translate-x-1" />
-                  </div>
+                  </a>
                 </motion.div>
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section id="pricing" className="scroll-mt-20 border-t border-white/10">
+        <div className="mx-auto max-w-7xl px-6 py-20">
+          <div className="grid gap-10 lg:grid-cols-[1fr_0.85fr] lg:items-start">
+            <div>
+              <div className="text-sm uppercase tracking-[0.3em] text-zinc-500">
+                Transparent pricing
+              </div>
+              <h3 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+                Gunsmithing price menu
+              </h3>
+              <p className="mt-4 max-w-2xl leading-7 text-zinc-400">
+                Straightforward labor rates for common work. Final pricing depends
+                on the firearm, condition, parts, and scope. You will get a quote
+                before any additional work is started.
+              </p>
+              <a
+                href="#contact"
+                className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-white hover:text-zinc-300"
+              >
+                Ask about your firearm
+                <ChevronRight className="h-4 w-4" />
+              </a>
+            </div>
+
+            <div className="rounded-[30px] border border-white/20 bg-gradient-to-br from-white/[0.12] to-white/[0.03] p-6 shadow-2xl shadow-black/30 md:p-8">
+              <div className="text-xs font-semibold uppercase tracking-[0.26em] text-zinc-400">
+                Featured 1911 package
+              </div>
+              <div className="mt-4 flex items-baseline gap-3">
+                <span className="text-5xl font-semibold tracking-tight text-white">
+                  $550
+                </span>
+                <span className="text-sm text-zinc-400">labor + parts</span>
+              </div>
+              <h4 className="mt-4 text-xl font-semibold">
+                Complete custom tuning
+              </h4>
+              <p className="mt-3 text-sm leading-6 text-zinc-300">
+                Full teardown, trigger and thumb safety fitting and tuning,
+                spring and guide rod installation, appropriate action smoothing,
+                disconnector work when needed, reassembly, and safety checks.
+                Compatible optic mounting is included when applicable.
+              </p>
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/30 px-4 py-4">
+                <div>
+                  <div className="text-sm font-semibold text-white">
+                    Add ultrasonic cleaning
+                  </div>
+                  <div className="mt-1 text-xs text-zinc-400">
+                    With the full package
+                  </div>
+                </div>
+                <div className="text-right">
+                  <div className="text-xl font-semibold text-white">+$50</div>
+                  <div className="text-xs text-zinc-400">$600 total labor</div>
+                </div>
+              </div>
+              <a
+                href="sms:15126738809"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition hover:bg-zinc-200"
+              >
+                <MessageSquare className="h-4 w-4" />
+                Request this package
+              </a>
+            </div>
+          </div>
+
+          <div className="mt-10 grid gap-5 lg:grid-cols-3">
+            {pricingGroups.map((group) => (
+              <div
+                key={group.title}
+                className="rounded-[28px] border border-white/10 bg-white/[0.03] p-6 md:p-7"
+              >
+                <h4 className="text-lg font-semibold text-white">
+                  {group.title}
+                </h4>
+                <div className="mt-5 divide-y divide-white/10">
+                  {group.items.map((item) => (
+                    <div key={item.service} className="py-4 first:pt-0 last:pb-0">
+                      <div className="flex items-start justify-between gap-4">
+                        <h5 className="text-sm font-medium leading-6 text-zinc-100">
+                          {item.service}
+                        </h5>
+                        <span className="shrink-0 text-right text-sm font-semibold text-white">
+                          {item.price}
+                        </span>
+                      </div>
+                      <p className="mt-1 text-xs leading-5 text-zinc-400">
+                        {item.detail}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-6 max-w-5xl text-xs leading-6 text-zinc-500">
+            Prices are in USD and reflect labor unless noted. Parts, ammunition,
+            range fees, specialty machining, refinishing, and unexpected repairs
+            are additional. Some models require a custom quote. All work is
+            subject to inspection, compatibility, and safe function verification.
+            Appointment only; no walk-ins.
+          </p>
         </div>
       </section>
 
